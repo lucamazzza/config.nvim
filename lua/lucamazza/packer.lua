@@ -32,7 +32,11 @@ return require('packer').startup(function(use)
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
-	use {
+    use('sharkdp/fd')
+    use('BurntSushi/ripgrep')
+    use('nvim-tree/nvim-web-devicons')
+    use('NeogitOrg/neogit')
+    use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
 			-- LSP Support
