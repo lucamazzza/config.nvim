@@ -34,8 +34,13 @@ return require('packer').startup(function(use)
 	use('tpope/vim-fugitive')
     use('sharkdp/fd')
     use('BurntSushi/ripgrep')
-    use('nvim-tree/nvim-web-devicons')
     use('NeogitOrg/neogit')
+    use('sanathks/workspace.nvim')
+    use('nvim-tree/nvim-web-devicons')
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
     use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
